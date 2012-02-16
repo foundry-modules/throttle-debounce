@@ -4,9 +4,9 @@ DEVELOPMENT_DIR = ${FOUNDRY_DIR}/scripts_
 MODULARIZE = ${FOUNDRY_DIR}/build/modularize
 UGLIFY = uglifyjs --unsafe -nc
 
-all: scrollTo min
+all: body min
 
-scrollTo:
+body:
 	${MODULARIZE} -n "throttle-debounce" jquery.ba-throttle-debounce.js > ${DEVELOPMENT_DIR}/throttle-debounce.js
 
 min:
